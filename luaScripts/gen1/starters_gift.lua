@@ -1,3 +1,5 @@
+--TODO Añadir la posibilidad de que el usuario pueda elegir el nombre del pokemon
+
 local version = memory.readword(0x14e)
 local base_address
 local party_address
@@ -62,7 +64,7 @@ function shiny(atkdef, spespc)
     end
 end
 
-local stop_for_almost_perfect = true
+local stop_for_almost_perfect = false
 local stop_for_perfect = true
 local stop_for_custom_ivs = false
 local custom_ivs = { atk = 0, def = 0, spe = 0, spc = 0 }
